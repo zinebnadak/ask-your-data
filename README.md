@@ -52,8 +52,9 @@
  
 ## Built By
  
-- [Zineb Nadak](https://github.com/zinebnadak) — 
-- [Nitesh Verma](https://github.com/niteshver) — 
+- [Zineb Nadak](https://github.com/zinebnadak) — engine: schema introspection, SQL generation, validation & guardrails, self-correction loop, evaluation
+- [Nitesh Verma](https://github.com/niteshver) — product: Streamlit UI, CSV upload, data cleaning pipeline, sessions, answers & charts
+
 
 ## References
 
