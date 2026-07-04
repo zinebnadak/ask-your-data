@@ -1,14 +1,21 @@
 [project]
 name = "ask-your-data"
 version = "0.1.0"
-description = "Add your description here"
+description = "Ask questions about CSV data with a Streamlit app and SQL generation engine."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.139.0",
+    "httpx>=0.28.1",
     "langfuse>=4.13.0",
     "openai>=2.44.0",
+    "pandas>=2.3.0",
     "python-dotenv>=1.2.2",
     "sqlglot>=30.12.0",
     "uvicorn>=0.50.0",
+    "streamlit>=1.46.0",
 ]
+
+[tool.uv]
+package = false
+
