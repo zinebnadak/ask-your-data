@@ -10,7 +10,7 @@
  
 ## What It Does
  
-[3–5 sentences. Plain-English walkthrough of the user flow: upload → ask → validated SQL → answer + chart. The generated SQL is always shown to the user.]
+[3–5 sentences. Plain-English walkthrough of the user flow]
  
 ## Architecture
  
@@ -25,6 +25,7 @@
 
  
 ## How to Run 
+
 
 ### Local LLM (Ollama)
  
@@ -41,10 +42,11 @@
 ## Stack
  
 | Layer | Tool | Why |
-|---|---|---|
+|---|sqlite3|Python's built-in sqlite3 module makes it incredibly easy to interact with databases without any additional installation|
 
  
-*Anything not on this list needs both of us to agree before it enters the project.*
+*
+Anything not on this list needs both of us to agree before it enters the project.*
  
 ## Honest Notes
  
