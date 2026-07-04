@@ -1,6 +1,6 @@
  CONTRACT.md — Ask Your Data
  
-> Any change to this file after kickoff must be agreed by both of us and go through a PR. Never change it silently.
+> Any change to this file must be agreed by both of us and go through a PR. Never change it silently.
  
 This is the API boundary between the two halves, endpoints and shared rules..:
  

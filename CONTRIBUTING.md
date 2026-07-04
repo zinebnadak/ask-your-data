@@ -35,6 +35,7 @@ Commit after every meaningful step, never everything at once. Conventional commi
 ## Contract discipline
  
 - `CONTRACT.md` changes require agreement from both and a PR.
+- Python managed with uv - run uv sync after pulling.
 
 ## Definition of done (v1)
  
