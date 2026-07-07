@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from Frontend.cleaning import normalize_headers, clean_dataframe, load_csv_bytes
+from frontend.cleaning import clean_dataframe, load_csv_bytes, normalize_headers
 
 
 def test_normalize_headers():

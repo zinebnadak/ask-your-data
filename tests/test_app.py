@@ -1,7 +1,7 @@
 import io
 import pandas as pd
 
-from Frontend.app import clean_uploaded_file, load_preview
+from frontend.app import clean_uploaded_file, load_preview
 
 
 class UploadedFileStub(io.BytesIO):

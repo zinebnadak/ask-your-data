@@ -1,9 +1,16 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
-from Frontend.cleaning import load_csv_bytes
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from frontend.cleaning import load_csv_bytes
 
 
 def load_preview(uploaded_file) -> pd.DataFrame:
@@ -96,14 +103,14 @@ def render_app() -> None:
         )
 
     if not uploaded:
-        st.stop()
+        return
 
     try:
-        cleaned_df, cleaning_warnings = clean_uploaded_file(uploaded)
+        _, cleaning_warnings = clean_uploaded_file(uploaded)
         preview_df = load_preview(uploaded)
     except Exception as exc:
         st.error(f"Could not clean this file: {exc}")
-        st.stop()
+        return
 
     st.success("File is cleaned and ready to analyse.")
     for warning in cleaning_warnings:
