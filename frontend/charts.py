@@ -12,8 +12,8 @@ def pick_chart(df: pd.DataFrame):
     # try to catch date-like strings too
     if not datetime_cols:
         for c in df.columns:
-            if df[c].dtype == object:
-                parsed = pd.to_datetime(df[c], errors="coerce")
+            if pd.api.types.is_string_dtype(df[c]):
+                parsed = pd.to_datetime(df[c], errors="coerce", format="mixed")
                 if parsed.notna().mean() > 0.8:
                     datetime_cols.append(c)
 
@@ -27,4 +27,3 @@ def pick_chart(df: pd.DataFrame):
         return "bar", fig
 
     return "table", None
-
